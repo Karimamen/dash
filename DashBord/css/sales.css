@@ -1,0 +1,49 @@
+.sec2 .content {
+  width: 100%;
+  color: var(--textColor);
+}
+.sec2 .content div {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  align-items: center;
+}
+
+.sec2 .content .one {
+  width: 10%;
+}
+.sec2 .content button {
+  background: #1e88e5;
+  padding: 6px 10px;
+  color: white;
+  font-size: 12px;
+  border: none;
+}
+.sec2 .content .head {
+  margin: 0;
+}
+.sec2 .content .head h2 {
+  font-size: 21px;
+}
+.sec2 .content .boxmain .one {
+  width: 12%;
+}
+
+.sec2 .content .boxmain p {
+  font-size: 15px;
+  font-weight: bold;
+}
+.sec2 .content .boxmain .container div:first-child {
+  margin-right: 35px;
+}
+
+.sec2 .content .box1 {
+  border-top: 1px solid rgb(0 0 0 / 10%);
+}
+.sec2 .content div span {
+  font-size: 12px;
+  color: #707070;
+}
+.sec2 .content div .container div:first-child {
+  margin-right: 40px;
+}

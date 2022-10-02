@@ -1,0 +1,222 @@
+.profil {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.profil .box1 {
+  width: 40%;
+  height: 85px;
+  background: var(--mainColor);
+  color: var(--secondColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  box-shadow: var(--mainBoxshadow);
+  border-radius: var(--mainborderRadius);
+  -webkit-border-radius: var(--mainborderRadius);
+  -moz-border-radius: var(--mainborderRadius);
+  -ms-border-radius: var(--mainborderRadius);
+  -o-border-radius: var(--mainborderRadius);
+}
+.profil .active {
+  height: 400px;
+  /* width: 100%; */
+}
+@media (max-width: 767px) {
+  .profil .box1 {
+    width: 100%;
+  }
+}
+.profil .box1 .toggle {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  background: var(--mainColor);
+  bottom: -37px;
+  cursor: pointer;
+  box-shadow: var(--mainBoxshadow);
+  border-radius: 0px 0px 35px 35px;
+  -webkit-border-radius: 0px 0px 35px 35px;
+  -moz-border-radius: 0px 0px 35px 35px;
+  -ms-border-radius: 0px 0px 35px 35px;
+  -o-border-radius: 0px 0px 35px 35px;
+}
+.profil .box1 .toggle::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  left: -24px;
+  top: 3px;
+  border-radius: 0px 20px 0px 0px;
+  box-shadow: 10px -11px 0px 3px var(--mainColor);
+  -webkit-border-radius: 0px 20px 0px 0px;
+  -moz-border-radius: 0px 20px 0px 0px;
+  -ms-border-radius: 0px 20px 0px 0px;
+  -o-border-radius: 0px 20px 0px 0px;
+}
+.profil .box1 .toggle::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  left: 49px;
+  top: 3px;
+  border-radius: 20px 0px 0px 0px;
+  box-shadow: -10px -11px 0px 3px var(--mainColor);
+  -webkit-border-radius: 20px 0px 0px 0px;
+  -moz-border-radius: 20px 0px 0px 0px;
+  -ms-border-radius: 20px 0px 0px 0px;
+  -o-border-radius: 20px 0px 0px 0px;
+}
+.profil .box1 .toggle span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: 15px;
+  left: 40%;
+  border-right: 2px solid var(--secondColor);
+  border-bottom: 2px solid var(--secondColor);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.profil .active .toggle span {
+  transform: rotate(224deg);
+  -webkit-transform: rotate(224deg);
+  -moz-transform: rotate(224deg);
+  -ms-transform: rotate(224deg);
+  -o-transform: rotate(224deg);
+}
+.profil .box1 .content1 {
+  position: absolute;
+  overflow: hidden;
+  inset: 0;
+  z-index: 5;
+  padding: 15px;
+}
+.profil .box1 .content1 .content {
+  display: flex;
+  display: flex;
+  align-items: center;
+}
+.profil .active .content1 .content {
+  flex-direction: column;
+}
+
+.profil .box1 .content1 .content img {
+  width: 60px;
+  height: 55px;
+  margin-right: 30px;
+  border: 3px solid var(--secondColor);
+  border-radius: 50%;
+  transition: 0.5s;
+  box-shadow: var(--mainBoxshadow);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.profil .active .content1 .content img {
+  height: 270px;
+  width: 190px;
+  margin: 15px 0;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+
+.profil .box1 .content1 .content p {
+  display: none;
+}
+.profil .active .content1 .content p {
+  display: block;
+  line-height: 3;
+}
+.skills {
+  margin-top: 20px;
+  width: 58%;
+}
+@media (max-width: 767px) {
+  .skills {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+.skills span {
+  padding: 20px;
+  background: #ffffff;
+  font-size: 19px;
+  cursor: pointer;
+  transition: var(--mainTransition);
+  border-radius: var(--mainborderRadius);
+  box-shadow: var(--mainBoxshadow);
+}
+@media (max-width: 500px) {
+  .skills span {
+    padding: 20px 15px;
+  }
+}
+.skills span:hover,
+.skills .active {
+  background: var(--mainColor);
+  color: var(--secondColor);
+}
+.skills .result {
+  position: relative;
+  margin-top: 40px;
+}
+
+.skills .result div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding-right: 10px;
+  transition: var(--mainTransition);
+  transform: scale(0);
+  background: var(--mainColor);
+  color: var(--secondColor);
+  border-radius: var(--mainborderRadius);
+  box-shadow: var(--mainBoxshadow);
+}
+
+@media (max-width: 940px) {
+  .skills .result div {
+    flex-direction: column;
+    align-items: normal;
+    line-height: 2;
+    padding: 10px;
+  }
+}
+.skills .result div img {
+  height: 100px;
+  margin-right: 25px;
+}
+@media (max-width: 940px) {
+  .skills .result div img {
+    height: 120px;
+    margin: 0;
+  }
+}
+.skills .result div h2 {
+  margin-right: 25px;
+}
+/* end */

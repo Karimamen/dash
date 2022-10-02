@@ -1,0 +1,71 @@
+main {
+  background-image: linear-gradient(rgb(0, 0, 0, 40%), rgb(0, 0, 0, 40%)),
+    url(../image/aboutus.jpg);
+  background-size: cover;
+}
+main nav i,
+main nav span i,
+main nav .not i {
+  color: white;
+}
+main nav form input {
+  background: rgb(68 68 68 / 10%);
+  color: white;
+}
+main nav form i {
+  color: white;
+}
+
+.socail {
+  margin-top: 195px;
+}
+@media (max-width: 800px) {
+  .socail {
+    margin-top: 70px;
+  }
+}
+.socail ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.socail ul li {
+  padding: 40px 0;
+  background: rgb(65 65 65 / 50%);
+  width: calc(96% / 5);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 1px solid rgb(249 249 249 / 50%);
+  /*box-shadow: 0px -2px 5px rgb(255 255 255 / 50%), 0 6px 10px rgb(0 0 0 / 60%);
+  */
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+@media (max-width: 800px) {
+  .socail ul li {
+    width: calc(96% / 3);
+  }
+}
+@media (max-width: 650px) {
+  .socail ul li {
+    width: calc(96% / 2);
+  }
+}
+@media (max-width: 500px) {
+  .socail ul li {
+    width: 100%;
+  }
+}
+.socail ul li:hover {
+  transform: translateY(-30px);
+  background: var(--mainColor);
+}

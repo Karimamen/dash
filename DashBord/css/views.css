@@ -1,0 +1,39 @@
+.content2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+.content2 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 23px;
+  background: #1e88e5;
+  color: white;
+  padding: 16px 0;
+  margin-bottom: 10px;
+  width: calc(96% / 3);
+  border-radius: var(--mainborderRadius);
+  -webkit-border-radius: var(--mainborderRadius);
+  -moz-border-radius: var(--mainborderRadius);
+  -ms-border-radius: var(--mainborderRadius);
+  -o-border-radius: var(--mainborderRadius);
+}
+@media (max-width: 767px) {
+  .content2 div {
+    width: calc(96% / 2);
+  }
+}
+@media (max-width: 500px) {
+  .content2 div {
+    width: 100%;
+  }
+}
+.content2 div p {
+  font-size: 15px;
+}
+.content2 div p .number {
+}

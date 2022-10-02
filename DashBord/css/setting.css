@@ -1,0 +1,159 @@
+main {
+  background-image: linear-gradient(rgb(0, 0, 0, 40%), rgb(0, 0, 0, 40%)),
+    url(../image/aboutus.jpg);
+  background-size: cover;
+}
+main nav i,
+main nav span i,
+main nav .not i {
+  color: white;
+}
+main nav form input {
+  background: rgb(68 68 68 / 10%);
+  color: white;
+}
+main nav form i {
+  color: white;
+}
+.sec2 {
+  margin-top: 40px;
+}
+.box {
+  background: rgb(36 36 36 / 20%);
+  color: #e2e2e2;
+  padding: 20px;
+  box-shadow: 0px 0px 50px rgb(255 255 255 / 20%) inset;
+  border-radius: 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.box p {
+  font-size: 11px;
+  line-height: 2.7;
+}
+.box:hover {
+  box-shadow: 0px 0px 100px rgb(255 255 255 / 20%) inset;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+.two {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.two .st {
+  width: 15%;
+  background: #1e88e5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+@media (max-width: 370px) {
+  .two .st {
+    width: 20%;
+  }
+}
+.two .st:hover {
+  justify-content: flex-start;
+  background: #5f5f5f;
+}
+.two .st div {
+  width: 50%;
+  height: 22px;
+  background: var(--secondColor);
+  clip-path: circle(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.two .st div span {
+  width: 6px;
+  height: 10px;
+  border-right: 2px solid var(--mainColor);
+  border-bottom: 2px solid var(--mainColor);
+  transform: rotate(45deg);
+}
+
+.box1 .three {
+  padding-left: var(--mainpadding);
+  height: 130px;
+  border-radius: 4px;
+  color: #a3a3a3;
+  background: rgb(0 0 0 / 40%);
+  border: 1px solid #434343;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.box2 form {
+  display: flex;
+  flex-direction: column;
+}
+.box2 form label {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.box2 form input {
+  margin-bottom: 12px;
+  padding: 8px;
+  background: rgb(0 0 0 / 50%);
+  outline: none;
+  border: 1px solid rgb(67 67 67);
+}
+
+button {
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 9px;
+  width: 85px;
+  background: rgb(6 6 6 / 40%);
+  color: #e2e2e2;
+  border: 1px solid #434343;
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(6 6 6 / 80%);
+}
+
+.box3 .three {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box4 form div {
+  margin-top: 11px;
+}
+.box5 form div {
+  margin: 8px 0;
+}
+.box5 .two {
+  margin: 10px 0 0;
+}
+.box5 .two div {
+  background: rgb(0 0 0 / 20%);
+  padding: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #434343;
+  width: 32%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.box5 .two div:hover {
+  background: rgb(0 0 0 / 50%);
+  border: 1px solid var(--mainColor);
+}
